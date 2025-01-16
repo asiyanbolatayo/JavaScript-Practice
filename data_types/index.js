@@ -5,6 +5,7 @@ let maxSize = Infinity
 let minSize = -Infinity
 let not_a_number = NaN
 
+
 let sum = 20 + 23.1; let difference = 20 - 10;
 let multiplication_result = 20 * 10; let division_result = 20 / 2;
 
