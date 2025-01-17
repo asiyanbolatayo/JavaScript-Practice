@@ -1,9 +1,9 @@
 //Numbers
 let size_in_meters = 20
 let size_in_inches = 2.1024
-let maxSize = Infinity
+let maxSize = Infinity  //Postive Infinity
 let minSize = -Infinity
-let not_a_number = NaN
+let not_a_number = NaN   //Not a number
 
 
 let sum = 20 + 23.1; let difference = 20 - 10;
@@ -23,16 +23,16 @@ let name3 = `Ayodeji Azeez`
 
 let firstName = 'Ayodeji'
 let lastName = 'Azeez'
-let fullName = `Mr ${firstName}${lastName}`
+let fullName = `Mr ${firstName} ${lastName}`  // Back ticks are use when you are trying to embed a variable
 
 let message = "Hello my friends\n My name is Johnson\n I am a software engineer"
-console.log(message.toUpperCase())
+console.log(message.toLowerCase())
 // 'HELLO MY FRIENDS\n MY NAME IS JOHNSON\n I AM A SOFTWARE ENGINEER'
 console.log(message.startsWith("Hello"))
 // true
 console.log(message.indexOf("name"))
 // 21
-console.log("\u{1F60D}")
+console.log("👽")
 
 
 //Boolean
@@ -52,13 +52,21 @@ let age = undefined //This can be done explicitly as well (Not recommended)
 let user1 = {}
 let user2 = new Object()
 user1["name"] = "Azeez"
+user1["age"] = 20
+user1["username"] = "azeez123"
+user1["email_verified"] = true
+user1["profile_settings"] = {theme: "dark", font_size: 20, show_my_profile_picture: true }
+
+console.log(user1)
+console.log(user1.profile_settings.font_size)
 
 let user3 = {
     name: "John Doe",
     age: 20,
     weight: 20.3,
-    "verifiedUser": true
+    "verified User": true
 }
+console.log(user3["verified User"])  //using square bracket cause of the var name spacing
 
 let user = {
     name: "John Doe",
@@ -68,4 +76,15 @@ let user = {
 }
 console.log(user["name"])
 console.log(user.age)
+console.log(user.weight)
+
+//Deleting a key
 delete user.weight
+console.log(user)
+//update user name
+user3["name"] = "Asiyanbola Muhammed"
+
+// Printing details
+console.log(user3)
+console.log(Object.values(user3))
+console.log(Object.keys(user3))
