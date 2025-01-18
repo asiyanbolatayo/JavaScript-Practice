@@ -1,44 +1,44 @@
-//if statement
-let day = "Monday"
-if (day == "Monday") alert("Today is Monday")
+// //if statement
+// let day = "Monday"
+// if (day == "Monday") alert("Today is Monday")
 
-let size = 25
+// let size = 25
 
-if (size == 20) {
-    alert("Your size is 20")
-    alert("Thank you!")
-}
-
-
-//if-else statement
-if (size == 20) {
-    alert("Size is available")
-    alert("Thank you!")
-} else {
-    alert("The size is not available")
-}
+// if (size == 20) {
+//     alert("Your size is 20")
+//     alert("Thank you!")
+// }
 
 
-//multiple if-else
-if (day == "Monday") {
+// //if-else statement
+// if (size == 20) {
+//     alert("Size is available")
+//     alert("Thank you!")
+// } else {
+//     alert("The size is not available")
+// }
 
-    alert("Today is monday!")
 
-} else if (day == "Tuesday") {
+// //multiple if-else
+// if (day == "Monday") {
 
-    alert("Today is Tuesday!")
+//     alert("Today is monday!")
 
-} else if (day == "Wednesday") {
+// } else if (day == "Tuesday") {
 
-    alert("Today is Wednesday!")
+//     alert("Today is Tuesday!")
+
+// } else if (day == "Wednesday") {
+
+//     alert("Today is Wednesday!")
     
-} else {
-    alert("Today is neither Monday, Tuesday or Wednesday!")
-}
+// } else {
+//     alert("Today is neither Monday, Tuesday or Wednesday!")
+// }
 
 
 //conditional operator (?)
-let age = 29
+let age = 16
 let canVote = (age > 18) ? true : false
 console.log(canVote)
 
