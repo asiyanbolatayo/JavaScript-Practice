@@ -21,11 +21,17 @@ if (size == 20) {
 
 //multiple if-else
 if (day == "Monday") {
+
     alert("Today is monday!")
+
 } else if (day == "Tuesday") {
+
     alert("Today is Tuesday!")
+
 } else if (day == "Wednesday") {
+
     alert("Today is Wednesday!")
+    
 } else {
     alert("Today is neither Monday, Tuesday or Wednesday!")
 }

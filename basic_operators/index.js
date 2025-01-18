@@ -11,10 +11,10 @@ let multiplicationResult = 20 * 10;
 
 // Division
 let divisionResult = 20 / 2;
-
+console.log(divisionResult)
 // Modulus
 let remainderResult = 20 % 10;
-
+console.log(remainderResult)
 // Exponent
 let exponentResult = 2 ** 2;
 
@@ -46,17 +46,17 @@ let size = 20
 
 // Increment operator
 size++ // Increases the value of size by one
-
+console.log(size)
 // Decrement operator
 size-- // Decreases the value of size by one
-
+console.log(size)
 
 // Boolean operators
 
 // Logical OR (||)
 console.log(true || true) // true
 console.log(false || true) // true
-console.log(false || false) // true
+console.log(false || false) // false
 
 // Logical AND (&&)
 console.log(true && true) // true
@@ -74,6 +74,6 @@ let rate = 0.05
 let years = 10
 
 let simpleInterest = (principal * rate * years) / 100
-
+console.log(simpleInterest)
 // Precedence Table
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
