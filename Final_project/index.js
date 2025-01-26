@@ -1,11 +1,36 @@
+const userStore = {
+    "Ada": {
+        firstName: "Ada",
+        lastName: "Lovelace",
+        email: "adalovelace@mail.com",
+        profession: "Computer programmer",
+        password: "12345Ada"
+    },
+    "Yemi": {
+        firstName: "Yemi",
+        lastName: "Adebisi",
+        email: "yemi_adebisi@gmail.com",
+        profession: "Software Engineer",
+        password: "12345Yemi"
+    },
+}
+
 
 function displayuserDetails(){
+    //Enter Username
     let userName = prompt("Enter your username")
     // console.log(validateuserName(userName))
 
     while ((validateuserName(userName)) == false){
+        
     userName = prompt("Username not valid. Please enter a valid username")
     }
+
+    if (userName == null){
+        return
+    }
+
+    // Enter Password
 
     let password = prompt("Enter password")
     // console.log(validatePassword(password))
@@ -14,11 +39,37 @@ function displayuserDetails(){
         password = prompt("Password must be greater than 6 characters. Please enter password again")
     }
 
-    console.log(`Your login name is: username: ${userName} password: ${password}`)
-   
+    if (password == null){
+        return
+    }
+
+    // User need to confirm password
+    let passwordConfirm = prompt("Enter password again")
+
+    while (passwordConfirm !== password){
+        passwordConfirm = prompt("Your password is incorrect. Please try again!")
+    }
+
+    if (passwordConfirm == null){
+        return
+    }
+
+    // Check if the user database contains the username
+    const user = userStore[userName]
+
+    if (user == undefined){
+        alert("User not found! Please register.")
+        return
+    }
+
+    console.log(user)
+    console.log(`Your detail are:
+         username: ${user.firstName} 
+         email: ${user.email}
+         professiuon: ${user.profession}`)
+    // alert("You successfully validated")
 }
 displayuserDetails()
-alert("You successfully validated")
 alert("You have come to the end of these program! Goodbye")
 
 function validateuserName(userName){
@@ -42,6 +93,8 @@ function validatePassword(password){
         return true
     }
 }
+
+
 
 
 
@@ -125,21 +178,6 @@ function validatePassword(password){
 //  * A user store object
 //  * @type {object}
 //  * */
-// const userStore = {
-//     "Ada": {
-//         firstName: "Ada",
-//         lastName: "Lovelace",
-//         email: "adalovelace@mail.com",
-//         profession: "Computer programmer",
-//         password: "12345Ada"
-//     },
-//     "Yemi": {
-//         firstName: "Yemi",
-//         lastName: "Adebisi",
-//         email: "yemi_adebisi@gmail.com",
-//         profession: "Software Engineer",
-//         password: "12345Yemi"
-//     },
-// }
+
 
 
